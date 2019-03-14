@@ -1,0 +1,22 @@
+<div class="Home">
+    <h2>PAGINA PRINCIPAL</h2>
+    <p>Estás en la página principal</p>
+</div>
+<br>
+<pre>
+    {{fecha|date: 'dd/MM/yyyy'}}
+    {{fecha|date: 'fullDate'|uppercase|lowercase}}
+    {{nombre|lowercase}}
+    {{5 | conversor: 7}}
+</pre>
+<br>
+<input type="text" [(ngModel)]="prenda_a_guardar"> <button (click)="guardarPrenda()">añadir prenda</button>
+<p *ngIf="prenda_a_guardar">La prenda a guardar es: <strong>{{prenda_a_guardar}}</strong></p>
+
+<h3>Listado de prendas de ropa</h3>
+<ul>
+    <li *ngFor="let prenda of listado_ropa; let i = index">
+        {{prenda}}
+        <button (click)="eliminarPrenda(i)">eliminar</button>
+    </li>
+</ul>

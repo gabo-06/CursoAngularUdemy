@@ -1,0 +1,32 @@
+<h3>{{tituloApp}}</h3>
+<nav>
+    <a [routerLink]="['/pagina-principal']" [routerLinkActive]="'activado'">
+        Home
+    </a>
+    <a [routerLink]="['/empleado']" [routerLinkActive]="'activado'">
+        Empleado
+    </a>
+    <a [routerLink]="['/fruta']" [routerLinkActive]="'activado'">
+        Fruta
+    </a>
+    <a [routerLink]="['/contacto']" [routerLinkActive]="'activado'">
+        Contacto
+    </a>
+    <a [routerLink]="['/coche']" [routerLinkActive]="'activado'">
+        Coche
+    </a>
+    <a [routerLink]="['/plantillas']" [routerLinkActive]="'activado'">
+        Plantillas
+    </a>
+    <a [routerLink]="['/formulario']" [routerLinkActive]="'activado'">
+        Formulario
+    </a>
+</nav>
+<hr />
+
+<router-outlet>
+    <!-- 
+    Esta es la parte del componente prinicipal cuyo
+    contenido depende de la url solicitada (Contenido dinámico). 
+    -->
+</router-outlet>

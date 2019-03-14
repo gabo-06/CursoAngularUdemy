@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="prenda_a_guardar" autofocus /> 
+<button type="button" (click)="guardarPrenda()">Agregar prenda</button>
+<br />
+<ul>
+    <li *ngFor="let ropa of listado_ropa">
+        {{ropa}}
+    </li>
+</ul>

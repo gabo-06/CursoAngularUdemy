@@ -1,0 +1,10 @@
+.Home
+{
+    background-color: red;
+    border-color: gray;
+    color: #dddddd;
+    border-width: 1px;
+    border-style: solid;
+    margin: 10px 0; 
+    padding: 10px;
+}
